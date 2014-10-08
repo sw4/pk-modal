@@ -71,6 +71,3 @@ var pk = pk || {};
     return pk;
 })(pk);
 
-pk.modal('header', '<div style="color:red;">this</div>');
-
-
