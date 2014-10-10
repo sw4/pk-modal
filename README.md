@@ -24,7 +24,7 @@ Simple helper library written in pure JS to enable modal dialogs
 Where `opt` is an object of the following type:
 
 ```javascript
-element: // DOM element as a reference point in the document to inject the modal - important in terms of scoping for DD libraries (e.g. angular) - defaults to document.body
+context: // optional, DOM element as a reference point in the document to inject the modal - important in terms of scoping for data driven document libraries (e.g. angular) - defaults to document.body
 header: // HTML content of the modal header
 content: // HTML content of the modal body
 draggable: // true/false, false by default to allow dragging within the document.body
