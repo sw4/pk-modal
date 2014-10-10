@@ -1,4 +1,4 @@
-pk-draggable
+pk-modal
 ========
 
 Simple helper library written in pure JS to enable modal dialogs
