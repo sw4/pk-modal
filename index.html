@@ -2,7 +2,7 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <title>pk-scroll</title>
+        <title>pk-modal</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <meta charset="utf-8">   
         <link href="https://rawgit.com/sw4/pk-base/master/pk-base.css" rel="stylesheet">             
@@ -17,15 +17,10 @@
         }
         </style>
     </head>
-    <body data-ng-app="pk-scroll">        
-      <a hre="#" id='example' pk-scroll="xy"></a>
-        <!-- Angular.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script> 
+    <body>        
+        <a href='#' onclick="pk.modal({header:'Modal Header',content:'Content...<br/>..goes...<br/>..here<br/>', draggable:true});">Click me!</a>
         <script src="https://rawgit.com/sw4/pk-base/master/pk-base.js"></script>
         <script src="https://rawgit.com/sw4/pk-draggable/master/pk-draggable.js"></script>  
-        <script src="https://rawgit.com/sw4/pk-modal/master/pk-modal.js"></script>  
-        <script>
-            pk.modal({header:'header',content:'content', draggable:true});
-        </script>
+        <script src="https://rawgit.com/sw4/pk-modal/master/pk-modal.js"></script> 
     </body>
 </html>
