@@ -1,0 +1,31 @@
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>pk-scroll</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">   
+        <link href="https://rawgit.com/sw4/pk-base/master/pk-base.css" rel="stylesheet">             
+        <link href="https://rawgit.com/sw4/pk-draggable/master/pk-draggable.css" rel="stylesheet">     
+        <link href="https://rawgit.com/sw4/pk-modal/master/pk-modal.css" rel="stylesheet">     
+        <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        </style>
+    </head>
+    <body data-ng-app="pk-scroll">        
+      <a hre="#" id='example' pk-scroll="xy"></a>
+        <!-- Angular.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min.js"></script> 
+        <script src="https://rawgit.com/sw4/pk-base/master/pk-base.js"></script>
+        <script src="https://rawgit.com/sw4/pk-draggable/master/pk-draggable.js"></script>  
+        <script src="https://rawgit.com/sw4/pk-modal/master/pk-modal.js"></script>  
+        <script>
+            pk.modal({header:'header',content:'content', draggable:true});
+        </script>
+    </body>
+</html>
