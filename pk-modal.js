@@ -1,7 +1,7 @@
 var pk = pk || {};
 (function (pk) {
     pk.modal = function (opt) {      
-        var e = opt.element;
+        var e = opt.element || document.body;
         var h = opt.header;
         var c = opt.content;        
         if (!e) return;
