@@ -1,8 +1,10 @@
 var pk = pk || {};
 (function (pk) {
-    pk.modal = function (e, h, c) {        
+    pk.modal = function (opt) {      
+        var e = opt.element;
+        var h = opt.header;
+        var c = opt.content;        
         if (!e) return;
-        // INIT SCROLL STRUCTURE  
         var content = document.createElement('div');
         var mask = document.createElement('div');
         var box = document.createElement('div');
@@ -18,7 +20,6 @@ var pk = pk || {};
         box.appendChild(header);
         box.appendChild(content);
         pk.addClass(mask, 'pk-modal-mask').appendChild(box);
-        // document.body.appendChild(mask);
         e.target.parentNode.appendChild(mask);
         function closeModal() {
             pk.addClass(pk.removeClass(mask, 'pk-show'), 'pk-hide');
@@ -45,7 +46,7 @@ var pk = pk || {};
             }
         }, 500);
         pk.center(box);
-        pk.draggable({
+        opt.draggable && pk.draggable && pk.draggable({
             element: box,
             handle: header,
             move: true
