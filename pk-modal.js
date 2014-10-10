@@ -20,7 +20,7 @@ var pk = pk || {};
         box.appendChild(header);
         box.appendChild(content);
         pk.addClass(mask, 'pk-modal-mask').appendChild(box);
-        e.target.parentNode.appendChild(mask);
+        e.parentNode.appendChild(mask);
         function closeModal() {
             pk.addClass(pk.removeClass(mask, 'pk-show'), 'pk-hide');
             var cleanup = setTimeout(function () {
