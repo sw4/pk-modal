@@ -3,6 +3,10 @@ pk-modal
 
 Simple helper library written in pure JS to enable modal dialogs
 
+
+**Licensed under [cc by-sa 3.0](http://creativecommons.org/licenses/by-sa/3.0/) with attribution required**
+
+
 ###Requires
 
 `pk-base.js` and `pk-base.css` as a precursor
