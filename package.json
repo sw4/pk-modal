@@ -1,0 +1,38 @@
+{
+  "name": "pk-modal",
+  "title": "pk-modal",
+  "description": "pk-modal",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sw4/pk-modal",
+  "author": {
+    "name": "SW4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sw4/pk-modal.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sw4/pk-modal/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/sw4/pk-modal/blob/master/LICENSE-MIT"
+    },
+    {
+      "type": "GPL",
+      "url": "https://github.com/sw4/pk-modal/blob/master/LICENSE-GPL"
+    }
+  ],
+  "main": "dist/pk-modal",
+  "engines": {
+    "node": ">=0.6"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  },
+  "devDependencies": {
+    "grunt": "~0.3.14"
+  },
+  "keywords": []
+}
