@@ -4,7 +4,7 @@ var pk = pk || {};
         var e = opt.context || document.body;
         var h = opt.header;
         var c = opt.content;        
-        if (!e) return;
+        if (!e){ return;}
         var content = document.createElement('div');
         var mask = document.createElement('div');
         var box = document.createElement('div');
@@ -23,34 +23,35 @@ var pk = pk || {};
         e.parentNode.appendChild(mask);
         function closeModal() {
             pk.addClass(pk.removeClass(mask, 'pk-show'), 'pk-hide');
-            var cleanup = setTimeout(function () {
+            setTimeout(function () {
                 mask.parentNode.removeChild(mask);
             }, 500);
         }
-        var drag = false;
         pk.bindEvent("click", mask, function (e) {
-            if (e.target != mask) return;
+            if (e.target !== mask){ return;}
             closeModal();
         });
         pk.bindEvent("click", close, closeModal);
-        pk.bindEvent("resize", window, function (event) {
+        pk.bindEvent("resize", window, function () {
             pk.center(box);
         });
         pk.addClass(mask, 'pk-show');
         boxH = box.offsetHeight;
-        var resizeMonitor = setInterval(function () {
+        setInterval(function () {
             var boxHN = box.offsetHeight;
-            if (boxH != boxHN) {
+            if (boxH !== boxHN) {
                 pk.center(box);
                 boxH = boxHN;
             }
         }, 500);
         pk.center(box);
-        opt.draggable && pk.draggable && pk.draggable({
-            element: box,
-            handle: header,
-            move: true
-        });
+        if(opt.draggable && pk.draggable){
+            pk.draggable({
+                element: box,
+                handle: header,
+                move: true
+            });
+        }
     };
     return pk;
 })(pk);
