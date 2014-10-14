@@ -1,5 +1,6 @@
 pk-modal
 ========
+[![Build Status](https://travis-ci.org/sw4/pk-modal.svg?branch=master)](https://travis-ci.org/sw4/pk-modal)
 
 Simple helper library written in pure JS to enable modal dialogs
 
