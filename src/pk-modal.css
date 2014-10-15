@@ -19,7 +19,7 @@
     opacity:0;
 }
 .pk-modal-box {
-    border:1px solid black;
+    border:1px solid #2faf98;
     background:white;
     display:block;
     width:40%;
@@ -28,11 +28,11 @@
     min-width:400px;
 }
 .pk-modal-header {
-    background:black;
+    background:#2faf98;
     color:white;
     font-weight:light;
     text-transform:uppercase;
-    line-height:50px;
+    line-height:40px;
 }
 
 
@@ -51,7 +51,7 @@
     line-height:30px;
     font-size:30px;
     right:10px;
-    top:8px;
+    top:6px;
     cursor:pointer;
     text-align:center;
     overflow:hidden;
