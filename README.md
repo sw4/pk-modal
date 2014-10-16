@@ -10,7 +10,7 @@ Simple helper library written in pure JS to enable modal dialogs
 #####[Demo](http://sw4.github.io/pk-modal)
 ###Requires
 
-`pk-base.js` and `pk-base.css` as a precursor
+`pk-core.js` and `pk-core.css` as a precursor
 
 ###Features
 
