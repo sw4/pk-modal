@@ -30,7 +30,7 @@
 .pk-modal-header {
     background:#2faf98;
     color:white;
-    font-weight:light;
+    font-weight:100;
     text-transform:uppercase;
     line-height:40px;
 }
@@ -44,7 +44,7 @@
     box-sizing:border-box;
 }
 .pk-modal-close {
-    display:block;
+    display:inline-block;
     position:absolute;
     width:30px;
     height:30px;
